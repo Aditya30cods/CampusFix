@@ -1,0 +1,251 @@
+.theme-toggle {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.theme-choice {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: #858b9e;
+}
+
+.notification-wrap {
+  position: relative;
+}
+
+.notification-panel {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 290px;
+  padding: 14px;
+  border: 1px solid #eceef3;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 12px 35px #25283a1c;
+}
+
+.notification-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eff0f4;
+}
+
+.notification-heading div,
+.notification-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.notification-heading b {
+  font-size: 11px;
+}
+
+.notification-heading small,
+.notification-item small {
+  color: #9297a7;
+  font-size: 9px;
+}
+
+.notification-close {
+  width: 25px;
+  height: 25px;
+}
+
+.notification-message {
+  margin: 14px 0;
+  color: #777d91;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.notification-error {
+  color: #a44d53;
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #eff0f4;
+}
+
+.notification-item b {
+  overflow: hidden;
+  color: #34374c;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notification-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 11px;
+  color: #6256d8;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.app-shell[data-theme='dark'] {
+  color: #e7e9f1;
+  background: #171923;
+  color-scheme: dark;
+}
+
+.app-shell[data-theme='dark'] .sidebar,
+.app-shell[data-theme='dark'] .topbar,
+.app-shell[data-theme='dark'] .panel,
+.app-shell[data-theme='dark'] .stat-card,
+.app-shell[data-theme='dark'] .aside-card,
+.app-shell[data-theme='dark'] .notification-panel {
+  border-color: #303342;
+  background: #202330;
+}
+
+.app-shell[data-theme='dark'] .org-switch,
+.app-shell[data-theme='dark'] .help-card,
+.app-shell[data-theme='dark'] .search-top,
+.app-shell[data-theme='dark'] .table-search,
+.app-shell[data-theme='dark'] th {
+  border-color: #343746;
+  background: #272a38;
+}
+
+.app-shell[data-theme='dark'] .org-symbol,
+.app-shell[data-theme='dark'] .select,
+.app-shell[data-theme='dark'] .report-form input,
+.app-shell[data-theme='dark'] .report-form textarea,
+.app-shell[data-theme='dark'] .report-form select,
+.app-shell[data-theme='dark'] .detail-side select,
+.app-shell[data-theme='dark'] .detail-side input,
+.app-shell[data-theme='dark'] .auth-form-wrap input,
+.app-shell[data-theme='dark'] .timeline-dot {
+  border-color: #3a3d4c;
+  background: #1b1e29;
+  color: #e7e9f1;
+}
+
+.app-shell[data-theme='dark'] .page-heading h1,
+.app-shell[data-theme='dark'] .stat-value,
+.app-shell[data-theme='dark'] .panel-head h3,
+.app-shell[data-theme='dark'] .form-section-head h3,
+.app-shell[data-theme='dark'] .detail-main h3,
+.app-shell[data-theme='dark'] .detail-side h3,
+.app-shell[data-theme='dark'] .profile-info b,
+.app-shell[data-theme='dark'] .org-switch b,
+.app-shell[data-theme='dark'] .help-card > b,
+.app-shell[data-theme='dark'] .update-copy b,
+.app-shell[data-theme='dark'] .empty-chart b,
+.app-shell[data-theme='dark'] .issue-title,
+.app-shell[data-theme='dark'] .member-cell b,
+.app-shell[data-theme='dark'] .notification-item b,
+.app-shell[data-theme='dark'] .table-foot b,
+.app-shell[data-theme='dark'] .timeline-row b {
+  color: #e7e9f1;
+}
+
+.app-shell[data-theme='dark'] .page-heading p,
+.app-shell[data-theme='dark'] .panel-head p,
+.app-shell[data-theme='dark'] .form-section-head p,
+.app-shell[data-theme='dark'] .description-text,
+.app-shell[data-theme='dark'] td,
+.app-shell[data-theme='dark'] .breadcrumbs b,
+.app-shell[data-theme='dark'] .report-form label,
+.app-shell[data-theme='dark'] .detail-side label,
+.app-shell[data-theme='dark'] .stat-label,
+.app-shell[data-theme='dark'] .notification-heading b {
+  color: #c3c6d3;
+}
+
+.app-shell[data-theme='dark'] .nav-link {
+  color: #a6aabd;
+}
+
+.app-shell[data-theme='dark'] .nav-link:hover,
+.app-shell[data-theme='dark'] .icon-button:hover,
+.app-shell[data-theme='dark'] .filter-tabs button:hover {
+  background: #2c2f40;
+  color: #d3d0ff;
+}
+
+.app-shell[data-theme='dark'] .nav-link.active,
+.app-shell[data-theme='dark'] .filter-tabs button.selected {
+  background: #35314f;
+  color: #c1baff;
+}
+
+.app-shell[data-theme='dark'] .filter-tabs button,
+.app-shell[data-theme='dark'] .icon-button,
+.app-shell[data-theme='dark'] .breadcrumbs,
+.app-shell[data-theme='dark'] .notification-message {
+  color: #a6aabd;
+}
+
+.app-shell[data-theme='dark'] .profile,
+.app-shell[data-theme='dark'] .list-toolbar,
+.app-shell[data-theme='dark'] th,
+.app-shell[data-theme='dark'] td,
+.app-shell[data-theme='dark'] .table-foot,
+.app-shell[data-theme='dark'] .update-row,
+.app-shell[data-theme='dark'] .notification-heading,
+.app-shell[data-theme='dark'] .notification-item,
+.app-shell[data-theme='dark'] .detail-field,
+.app-shell[data-theme='dark'] .form-actions,
+.app-shell[data-theme='dark'] .detail-divider,
+.app-shell[data-theme='dark'] .page-content + footer {
+  border-color: #343746;
+}
+
+.app-shell[data-theme='dark'] .issue-panel,
+.app-shell[data-theme='dark'] .table-wrap {
+  background: #202330;
+}
+
+.app-shell[data-theme='dark'] .report-form input::placeholder,
+.app-shell[data-theme='dark'] .report-form textarea::placeholder,
+.app-shell[data-theme='dark'] .auth-form-wrap input::placeholder {
+  color: #777d91;
+}
+
+.app-shell[data-theme='dark'] .ai-suggest {
+  border-color: #3d3a5a;
+  background: #29273b;
+}
+
+.app-shell[data-theme='dark'] .aside-illustration,
+.app-shell[data-theme='dark'] .empty-chart-icon {
+  background: #302d49;
+}
+
+.app-shell[data-theme='dark'] .category-tag,
+.app-shell[data-theme='dark'] .role-tag {
+  background: #343746;
+  color: #c3c6d3;
+}
+
+.app-shell[data-theme='dark'] .notification-item:hover {
+  background: #292c3a;
+}
+
+@media (max-width: 560px) {
+  .notification-panel {
+    right: -42px;
+    width: min(290px, calc(100vw - 32px));
+  }
+}
